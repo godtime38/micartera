@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de Mi Cartera</title>
+<meta name="description" content="Política de privacidad de Mi Cartera: qué datos usa, dónde se guardan y con quién se comparten.">
+<style>
+  :root { --papel:#f6f3ec; --tinta:#1b1a17; --suave:#5c5850; --acento:#1f6f5c; --linea:#dcd6c8; }
+  @media (prefers-color-scheme: dark) { :root { --papel:#141412; --tinta:#efece4; --suave:#a8a396; --acento:#5fc2a5; --linea:#2c2b27; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .fecha { color: var(--suave); margin: 0 0 32px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  a { color: var(--acento); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--linea); color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Mi Cartera · Vigente desde el 18 de noviembre de 2026</p>
+
+  <p>Mi Cartera es una app de finanzas personales para Android. No tiene servidores propios, no tiene cuentas de usuario y no vende ni comparte tus datos con anunciantes.</p>
+
+  <h2>Dónde se guardan tus datos</h2>
+  <p>Todo lo que anotas o la app lee (gastos, tarjetas, deudas, metas, notas del asesor) se guarda en tu teléfono, cifrado con una clave que sale de tu PIN. Si borras la app, se borran. Las copias de seguridad las haces tú y van cifradas.</p>
+
+  <h2>Gmail</h2>
+  <ul>
+    <li>Con tu permiso, la app pide a Google acceso de <strong>solo lectura</strong> a tu Gmail (<code>gmail.readonly</code>).</li>
+    <li>Solo busca los avisos de consumo que mandan los bancos que tú tienes configurados, y solo los que llegan después de conectar la cuenta. No lee tus demás correos.</li>
+    <li>De cada aviso se queda con el monto, la fecha, el comercio y los últimos 4 dígitos de la tarjeta. El correo no se guarda.</li>
+    <li>Para entender el aviso, la app puede mandar su texto a un modelo de inteligencia artificial (ver más abajo). Antes de mandarlo le quita el nombre del titular, correos, teléfonos, cédulas y los números largos, de los que deja solo los últimos 4.</li>
+    <li>Puedes quitar el permiso cuando quieras en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> o desde Ajustes → Gmail.</li>
+  </ul>
+  <p>El uso que Mi Cartera hace de la información recibida de las APIs de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de las APIs de Google</a>, incluidos los requisitos de Uso Limitado. Los datos de Gmail no se usan para publicidad, no se venden, no los lee ninguna persona y no se usan para entrenar modelos de inteligencia artificial.</p>
+
+  <h2>Inteligencia artificial</h2>
+  <p>El asesor Faro y la lectura de avisos y facturas usan un modelo de lenguaje a través de OpenRouter. Se manda solo lo necesario para responder: el aviso enmascarado, la foto de una factura que tú elijas o un resumen de tus cifras sin tu nombre. Ni la app ni ese servicio usan estos datos para entrenar modelos.</p>
+
+  <h2>Voz</h2>
+  <p>La voz de Faro se genera dentro del teléfono. Para entender lo que dices se usa el reconocimiento de voz del propio teléfono; si el teléfono no lo tiene sin conexión, lo transcribe el servicio de voz de Google del teléfono.</p>
+
+  <h2>Otros datos de internet</h2>
+  <p>La app consulta la tasa del dólar y precios públicos de criptomonedas. Esas consultas no llevan datos tuyos.</p>
+
+  <h2>Cambios y contacto</h2>
+  <p>Si esta política cambia, se actualiza esta página con su nueva fecha. Para cualquier pregunta, escribe al correo de asistencia que aparece en la pantalla de permisos de Google cuando conectas Gmail.</p>
+
+  <footer><a href="index.html">Mi Cartera</a></footer>
+</main>
+</body>
+</html>
